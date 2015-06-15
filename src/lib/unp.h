@@ -514,4 +514,10 @@ void	 err_quit(const char *, ...);
 void	 err_ret(const char *, ...);
 void	 err_sys(const char *, ...);
 
+/* 
+ * /usr/include/linux/limits.h
+ * Linux Use NR_OPEN instead of OPEN_MAX
+*/
+#define OPEN_MAX 1024
+
 #endif	/* __unp_h */
